@@ -56,7 +56,7 @@ public class ContactManagementSystem {
                 break;
 
             case 2:
-                String sql1 = "UPDATE ContactManagement.contact SET fname = ? AND lname = ? WHERE phone = ? And city = ?";
+                String sql1 = "UPDATE ContactManagement.contact SET fname = ?, lname = ? WHERE phone = ? And city = ?";
                 PreparedStatement ps1 = con.prepareStatement(sql1);
                 ps1.setString(1, fName);
                 ps1.setString(2, lName);
